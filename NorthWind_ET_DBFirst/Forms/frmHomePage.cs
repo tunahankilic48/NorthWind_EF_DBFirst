@@ -16,5 +16,36 @@ namespace NorthWind_ET_DBFirst.Forms
         {
             InitializeComponent();
         }
+
+        private void pnlCategories_Click(object sender, EventArgs e)
+        {
+            frmCategories frm = new frmCategories (this);
+            frm.Show();
+            this.Hide();
+        }
+        private void lblCategories_Click(object sender, EventArgs e)
+        {
+            frmCategories frm = new frmCategories(this);
+            frm.Show();
+            this.Hide();
+        }
+
+        private void pnlExit_Click(object sender, EventArgs e)
+        {
+            DialogResult answer =  MessageBox.Show("Are you sure to exit?", "Question", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (answer == DialogResult.Yes)
+            {
+                this.Close();
+            }
+        }
+
+        private void lblExit_Click(object sender, EventArgs e)
+        {
+            DialogResult answer = MessageBox.Show("Are you sure to exit?", "Question", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (answer == DialogResult.Yes)
+            {
+                this.Close();
+            }
+        }
     }
 }

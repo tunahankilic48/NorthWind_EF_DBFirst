@@ -75,6 +75,7 @@
             this.lblExit.Size = new System.Drawing.Size(64, 33);
             this.lblExit.TabIndex = 1;
             this.lblExit.Text = "Exit";
+            this.lblExit.Click += new System.EventHandler(this.lblExit_Click);
             // 
             // lblTerritories
             // 
@@ -275,6 +276,7 @@
             this.lblCategories.Size = new System.Drawing.Size(139, 33);
             this.lblCategories.TabIndex = 1;
             this.lblCategories.Text = "Categories";
+            this.lblCategories.Click += new System.EventHandler(this.lblCategories_Click);
             // 
             // pnlExit
             // 
@@ -285,6 +287,7 @@
             this.pnlExit.Name = "pnlExit";
             this.pnlExit.Size = new System.Drawing.Size(202, 163);
             this.pnlExit.TabIndex = 10;
+            this.pnlExit.Click += new System.EventHandler(this.pnlExit_Click);
             // 
             // pnlShippers
             // 
@@ -305,6 +308,7 @@
             this.pnlCategories.Name = "pnlCategories";
             this.pnlCategories.Size = new System.Drawing.Size(202, 163);
             this.pnlCategories.TabIndex = 12;
+            this.pnlCategories.Click += new System.EventHandler(this.pnlCategories_Click);
             // 
             // frmHomePage
             // 
