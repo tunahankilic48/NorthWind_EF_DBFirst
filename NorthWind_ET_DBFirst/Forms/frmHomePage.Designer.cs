@@ -256,6 +256,7 @@
             this.lblCustomers.Size = new System.Drawing.Size(141, 33);
             this.lblCustomers.TabIndex = 1;
             this.lblCustomers.Text = "Customers";
+            this.lblCustomers.Click += new System.EventHandler(this.lblCustomers_Click);
             // 
             // pnlCustomers
             // 
@@ -266,6 +267,7 @@
             this.pnlCustomers.Name = "pnlCustomers";
             this.pnlCustomers.Size = new System.Drawing.Size(202, 163);
             this.pnlCustomers.TabIndex = 9;
+            this.pnlCustomers.Click += new System.EventHandler(this.pnlCustomers_Click);
             // 
             // lblCategories
             // 

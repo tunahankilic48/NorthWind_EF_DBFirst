@@ -114,6 +114,7 @@
             this.txtPostalCode.Name = "txtPostalCode";
             this.txtPostalCode.Size = new System.Drawing.Size(194, 30);
             this.txtPostalCode.TabIndex = 8;
+            this.txtPostalCode.TextChanged += new System.EventHandler(this.txtPostalCode_TextChanged);
             // 
             // txtCompanyName
             // 
@@ -123,6 +124,7 @@
             this.txtCompanyName.Name = "txtCompanyName";
             this.txtCompanyName.Size = new System.Drawing.Size(194, 30);
             this.txtCompanyName.TabIndex = 2;
+            this.txtCompanyName.TextChanged += new System.EventHandler(this.txtCompanyName_TextChanged);
             // 
             // txtRegion
             // 
@@ -132,6 +134,7 @@
             this.txtRegion.Name = "txtRegion";
             this.txtRegion.Size = new System.Drawing.Size(194, 30);
             this.txtRegion.TabIndex = 7;
+            this.txtRegion.TextChanged += new System.EventHandler(this.txtRegion_TextChanged);
             // 
             // txtContactTitle
             // 
@@ -141,6 +144,7 @@
             this.txtContactTitle.Name = "txtContactTitle";
             this.txtContactTitle.Size = new System.Drawing.Size(194, 30);
             this.txtContactTitle.TabIndex = 4;
+            this.txtContactTitle.TextChanged += new System.EventHandler(this.txtContactTitle_TextChanged);
             // 
             // txtCustomerID
             // 
@@ -150,6 +154,7 @@
             this.txtCustomerID.Name = "txtCustomerID";
             this.txtCustomerID.Size = new System.Drawing.Size(194, 30);
             this.txtCustomerID.TabIndex = 1;
+            this.txtCustomerID.TextChanged += new System.EventHandler(this.txtCustomerID_TextChanged);
             // 
             // groupBox2
             // 
@@ -173,7 +178,7 @@
             this.groupBox2.Controls.Add(this.txtRegionSearch);
             this.groupBox2.Controls.Add(this.lblRegionSearch);
             this.groupBox2.Controls.Add(this.txtPhoneSearch);
-            this.groupBox2.Location = new System.Drawing.Point(12, 21);
+            this.groupBox2.Location = new System.Drawing.Point(12, 22);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(1277, 142);
             this.groupBox2.TabIndex = 32;
@@ -201,6 +206,7 @@
             this.btnListallCustomers.TabIndex = 28;
             this.btnListallCustomers.Text = "List all Customers";
             this.btnListallCustomers.UseVisualStyleBackColor = false;
+            this.btnListallCustomers.Click += new System.EventHandler(this.btnListallCustomers_Click);
             // 
             // rdbPhone
             // 
@@ -224,6 +230,7 @@
             this.btnSearch.TabIndex = 27;
             this.btnSearch.Text = "Search";
             this.btnSearch.UseVisualStyleBackColor = false;
+            this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
             // 
             // rdbCountry
             // 
@@ -392,24 +399,26 @@
             this.btnX.BackColor = System.Drawing.Color.Red;
             this.btnX.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnX.ForeColor = System.Drawing.Color.White;
-            this.btnX.Location = new System.Drawing.Point(1666, -1);
+            this.btnX.Location = new System.Drawing.Point(1666, 0);
             this.btnX.Name = "btnX";
             this.btnX.Size = new System.Drawing.Size(33, 33);
             this.btnX.TabIndex = 33;
             this.btnX.Text = "X";
             this.btnX.UseVisualStyleBackColor = false;
+            this.btnX.Click += new System.EventHandler(this.btnX_Click);
             // 
             // dataGridView1
             // 
             this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(11, 159);
+            this.dataGridView1.Location = new System.Drawing.Point(11, 160);
             this.dataGridView1.MultiSelect = false;
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 29;
             this.dataGridView1.Size = new System.Drawing.Size(1278, 537);
             this.dataGridView1.TabIndex = 34;
+            this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
             // 
             // erpPhone
             // 
@@ -459,6 +468,7 @@
             this.txtAddress.Name = "txtAddress";
             this.txtAddress.Size = new System.Drawing.Size(194, 30);
             this.txtAddress.TabIndex = 5;
+            this.txtAddress.TextChanged += new System.EventHandler(this.txtAddress_TextChanged);
             // 
             // erpFax
             // 
@@ -474,6 +484,7 @@
             this.btnUpdate.TabIndex = 14;
             this.btnUpdate.Text = "Update";
             this.btnUpdate.UseVisualStyleBackColor = false;
+            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
             // 
             // btnDelete
             // 
@@ -485,6 +496,7 @@
             this.btnDelete.TabIndex = 13;
             this.btnDelete.Text = "Delete";
             this.btnDelete.UseVisualStyleBackColor = false;
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
             // btnAdd
             // 
@@ -496,6 +508,7 @@
             this.btnAdd.TabIndex = 12;
             this.btnAdd.Text = "Add";
             this.btnAdd.UseVisualStyleBackColor = false;
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
             // lblFax
             // 
@@ -585,7 +598,7 @@
             this.groupBox1.Controls.Add(this.txtRegion);
             this.groupBox1.Controls.Add(this.txtContactTitle);
             this.groupBox1.Controls.Add(this.txtCustomerID);
-            this.groupBox1.Location = new System.Drawing.Point(1295, 21);
+            this.groupBox1.Location = new System.Drawing.Point(1295, 22);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(375, 675);
             this.groupBox1.TabIndex = 31;
@@ -660,6 +673,7 @@
             this.txtFax.Name = "txtFax";
             this.txtFax.Size = new System.Drawing.Size(194, 30);
             this.txtFax.TabIndex = 11;
+            this.txtFax.TextChanged += new System.EventHandler(this.txtFax_TextChanged);
             // 
             // txtCountry
             // 
@@ -669,6 +683,7 @@
             this.txtCountry.Name = "txtCountry";
             this.txtCountry.Size = new System.Drawing.Size(194, 30);
             this.txtCountry.TabIndex = 9;
+            this.txtCountry.TextChanged += new System.EventHandler(this.txtCountry_TextChanged);
             // 
             // txtCity
             // 
@@ -678,6 +693,7 @@
             this.txtCity.Name = "txtCity";
             this.txtCity.Size = new System.Drawing.Size(194, 30);
             this.txtCity.TabIndex = 6;
+            this.txtCity.TextChanged += new System.EventHandler(this.txtCity_TextChanged);
             // 
             // txtContactName
             // 
@@ -687,6 +703,7 @@
             this.txtContactName.Name = "txtContactName";
             this.txtContactName.Size = new System.Drawing.Size(194, 30);
             this.txtContactName.TabIndex = 3;
+            this.txtContactName.TextChanged += new System.EventHandler(this.txtContactName_TextChanged);
             // 
             // txtPhone
             // 
@@ -696,6 +713,7 @@
             this.txtPhone.Name = "txtPhone";
             this.txtPhone.Size = new System.Drawing.Size(194, 30);
             this.txtPhone.TabIndex = 10;
+            this.txtPhone.TextChanged += new System.EventHandler(this.txtPhone_TextChanged);
             // 
             // frmCustomers
             // 
@@ -712,6 +730,7 @@
             this.Name = "frmCustomers";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmCustomers";
+            this.Load += new System.EventHandler(this.frmCustomers_Load);
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
