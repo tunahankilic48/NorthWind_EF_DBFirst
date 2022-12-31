@@ -1,4 +1,5 @@
-﻿using System;
+﻿using NorthWind_EF_DBFirst.Forms;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -19,7 +20,7 @@ namespace NorthWind_ET_DBFirst.Forms
 
         private void pnlCategories_Click(object sender, EventArgs e)
         {
-            frmCategories frm = new frmCategories (this);
+            frmCategories frm = new frmCategories(this);
             frm.Show();
             this.Hide();
         }
@@ -32,20 +33,30 @@ namespace NorthWind_ET_DBFirst.Forms
 
         private void pnlExit_Click(object sender, EventArgs e)
         {
-            DialogResult answer =  MessageBox.Show("Are you sure to exit?", "Question", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            DialogResult answer = MessageBox.Show("Are you sure to exit?", "Question", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
             if (answer == DialogResult.Yes)
-            {
                 this.Close();
-            }
         }
 
         private void lblExit_Click(object sender, EventArgs e)
         {
             DialogResult answer = MessageBox.Show("Are you sure to exit?", "Question", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
             if (answer == DialogResult.Yes)
-            {
                 this.Close();
-            }
+        }
+
+        private void pnlCustomers_Click(object sender, EventArgs e)
+        {
+            frmCustomers frm = new frmCustomers(this);
+            frm.Show();
+            this.Hide();
+        }
+
+        private void lblCustomers_Click(object sender, EventArgs e)
+        {
+            frmCustomers frm = new frmCustomers(this);
+            frm.Show();
+            this.Hide();
         }
     }
 }
